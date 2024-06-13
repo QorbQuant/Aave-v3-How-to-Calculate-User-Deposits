@@ -1,0 +1,58 @@
+# positions
+
+query positions {
+  positions {
+    account {
+      id
+    }
+    balance
+    blockNumberClosed
+    blockNumberOpened
+    asset {
+      decimals
+      id
+      name
+      symbol
+    }
+  }
+}
+
+# user deposits
+
+query deposits {
+  deposits {
+    account {
+      id
+    }
+    amount
+    asset {
+      id
+      name
+      symbol
+      decimals
+    }
+    timestamp
+    hash
+  }
+}
+
+# user withddraws
+
+query withdraws {
+withdraws {
+    account {
+      id
+    }
+    amount
+    asset {
+      id
+      name
+      symbol
+      decimals
+    }
+    timestamp
+    hash
+  }
+}
+
+
