@@ -17,6 +17,28 @@ query positions {
   }
 }
 
+# balances
+
+query MyQuery {
+  accounts {
+    id
+    positions {
+      balance
+      principal
+      timestampOpened
+      timestampClosed
+      asset {
+        symbol
+        name
+        id
+        decimals
+        _iavsTokenType
+      }
+      side
+    }
+  }
+}
+
 # user deposits
 
 query deposits {
